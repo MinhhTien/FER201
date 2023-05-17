@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { PlayerList } from '../ListOfPlayers';
 
-export default class Players extends Component {
-  render() {
+export default function Players() {
     return (
       <div className="container">
         {PlayerList.map((player) => (
@@ -19,5 +18,4 @@ export default class Players extends Component {
         ))}
       </div>
     );
-  }
 }
