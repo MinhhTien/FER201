@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { PlayerList } from '../ListOfPlayers';
+import { data } from '../ListOfPlayers';
 import { Link } from 'react-router-dom';
 
 export default function Players() {
   const [player, setPlayer] = useState([]);
   return (
     <div className="container">
-      {PlayerList.map((player) => (
+      {data.map((player) => (
         <div key={player.id} className="column">
           <div className="card">
             <img src={player.img} alt={player.name} />
             <h3>{player.name}</h3>
             <p className="title">{player.club}</p>
-            <Link>
+            <Link to={`detail/${player.id}`}>
               <p>
                 <button>Detail</button>
               </p>

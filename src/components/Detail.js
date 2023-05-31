@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { data } from '../ListOfPlayers';
 
-function Detail() {
+export default function Detail() {
   const userName = useParams();
   const player = data.find((obj) => {
     return obj.id === userName.id;
@@ -9,11 +9,11 @@ function Detail() {
 
   let cost = player.cost.toLocaleString();
   return (
-    <div className="container">
+    <div className="detail">
       <div className="product-card">
         <div className="badge">{player.name}</div>
         <div className="product-tumb">
-          <img src={player.img} alt={player.name} />
+          <img src={`../${player.img}`} alt={player.name} />
         </div>
         <div className='product-details'>
             <h4>{player.club}</h4>

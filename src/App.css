@@ -44,6 +44,29 @@ a {
       }
     }
   }
+
+  .detail {
+    .product-card {
+      text-align: center;
+      .badge {
+        top: 0.5rem;
+        left: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 0.25rem;
+      }
+      .product-tumb {
+        > img {
+          object-fit: fill;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
 }
 
 footer {
@@ -100,3 +123,4 @@ footer {
   max-height: 30%;
   overflow: auto;
 }
+

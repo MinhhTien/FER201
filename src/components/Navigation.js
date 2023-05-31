@@ -10,7 +10,7 @@ export default function Navigation() {
       >
         <ul>
           <li>
-            <a className="active" href="#home">
+            <a className="active" href="/">
               Home
             </a>
           </li>
@@ -21,7 +21,7 @@ export default function Navigation() {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
         <div style={{ position: 'relative' }}>
