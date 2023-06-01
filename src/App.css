@@ -6,22 +6,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
-ul {
+
+nav ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-li {
+ul li {
   list-style: none;
-  padding: 15px;
   > 
   .active {
-    background-color: #a1a92c;
+    background-color: #6cdfff;
   }
 }
-a {
+li a {
   text-decoration: none;
   padding: 15px;
 }
@@ -47,7 +48,7 @@ a {
 }
 
 footer {
-  background-color: #a1a92c;
+  background-color: #6cdfff;
   color: white;
   padding: 15px;
   display: flex;
