@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { data } from '../ListOfPlayers';
 import { Link } from 'react-router-dom';
+import { Icon, CardTitle, Row, Col, Card, Container } from 'react-materialize'
 
 export default function Players() {
   const [player, setPlayer] = useState([]);
   return (
-    <div className="container">
+    <Container>
       {data.map((player) => (
         <div key={player.id} className="column">
           <div className="card">
@@ -32,6 +33,6 @@ export default function Players() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
