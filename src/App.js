@@ -1,6 +1,6 @@
-import './App.css';
+import './App.scss';
 import Navigation from './components/Navigation';
-import Players from './components/Players';
+import Card from './components/Card';
 import Detail from './components/Detail';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        <Route path='/' element={<Players />} />
+        <Route path='/' element={<Card />} />
         <Route path='/detail/:id' element={<Detail />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
