@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import * as React from 'react';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home', 'About', 'Contact'];
 
 const Navigation = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

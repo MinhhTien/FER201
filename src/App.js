@@ -1,28 +1,24 @@
 import './App.scss';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import AddUser from './components/AddUser';
-import User from './components/User';
-import Box from '@mui/material/Box';
+import Main from './components/Main';
+import Contact from './components/Contact';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'flex-start',
-          alignItems: 'flex-start',
-          height: '100vh',
-          width: '100vw',
-          padding: 2,
-        }}
-      >
-        <AddUser />
-        <User />
-      </Box>
-
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <Main />
+          }
+        ></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
       <Footer />
     </div>
   );

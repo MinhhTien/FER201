@@ -29,11 +29,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
 li {
   list-style: none;
@@ -46,6 +41,11 @@ li {
 a {
   text-decoration: none;
   padding: 15px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
 }
 
 .App {

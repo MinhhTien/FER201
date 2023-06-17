@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import { PlayerList } from '../ListOfPlayers';
-import PlayersPresentation from './PlayersPresentation';
+import { Box } from '@mui/material';
+import AddUser from './AddUser';
+import User from './User';
 
 export class Main extends Component {
-  constructor() {
-    super();
-    this.state = {
-      players: PlayerList,
-    };
-  }
   render() {
-    return <PlayersPresentation players={this.state.players} />;
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'flex-start',
+          height: '100vh',
+          width: '100vw',
+          padding: 2,
+        }}
+      >
+        <AddUser />
+        <User />
+      </Box>
+    );
   }
 }
-export default Main
+export default Main;
